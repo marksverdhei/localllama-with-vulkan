@@ -1,7 +1,7 @@
 # Running in docker  
 
 ```
-git clone ggml-org/llama.cpp
+gh repo clone ggml-org/llama.cpp
 cd llama.cpp
 ```
 
