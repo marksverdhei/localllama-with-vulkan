@@ -25,7 +25,7 @@ Then you're good to go.
 
 Benchmark example:
 ```
-docker run -it --rm -v "$(pwd)/models:/models" --device /dev/dri/renderD128:/dev/dri/renderD128 --device /dev/dri/card1:/dev/dri/card1 llama-cpp-vulkan -b -m models/Phi-4-mini-reasoning-Q4_K_M.gguf
+docker run -it --rm -v "$(pwd)/models:/app/models" --device /dev/dri/renderD128:/dev/dri/renderD128 --device /dev/dri/card1:/dev/dri/card1 llama-cpp-vulkan -b -m models/Phi-4-mini-reasoning-Q4_K_M.gguf
 ```
 
 
