@@ -46,16 +46,18 @@ docker run -it --rm -v "$(pwd)/models:/app/models" --device /dev/dri/renderD128:
 | phi3 3B Q4_K - Medium          |   2.31 GiB |     3.84 B | Vulkan     |  99 |           pp512 |        289.63 ± 2.32 |
 | phi3 3B Q4_K - Medium          |   2.31 GiB |     3.84 B | Vulkan     |  99 |           tg128 |         33.87 ± 0.08 |
 
-
-
 `RX 6600 8GB (16xpcie 3.0)`  
-
-
 | model                          |       size |     params | backend    | ngl |            test |                  t/s |
 | ------------------------------ | ---------: | ---------: | ---------- | --: | --------------: | -------------------: |
 | phi3 3B Q4_K - Medium          |   2.31 GiB |     3.84 B | Vulkan     |  99 |           pp512 |        626.25 ± 0.50 |
 | phi3 3B Q4_K - Medium          |   2.31 GiB |     3.84 B | Vulkan     |  99 |           tg128 |         62.82 ± 0.52 |
 
+
+`AMD Ryzen 7 8840HS | Radeon 780M APU`
+| model                          |       size |     params | backend    | ngl |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --------------: | -------------------: |
+| phi3 3B Q4_K - Medium          |   2.31 GiB |     3.84 B | Vulkan     |  99 |           pp512 |       359.73 ± 41.77 |
+| phi3 3B Q4_K - Medium          |   2.31 GiB |     3.84 B | Vulkan     |  99 |           tg128 |         26.13 ± 0.07 |
 
 
 ### Multi-GPU  
